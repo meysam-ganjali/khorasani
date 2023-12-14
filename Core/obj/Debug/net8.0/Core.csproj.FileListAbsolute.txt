@@ -1,0 +1,14 @@
+E:\Projects\Web\Khorasani\Core\bin\Debug\net8.0\Core.deps.json
+E:\Projects\Web\Khorasani\Core\bin\Debug\net8.0\Core.runtimeconfig.json
+E:\Projects\Web\Khorasani\Core\bin\Debug\net8.0\Core.dll
+E:\Projects\Web\Khorasani\Core\bin\Debug\net8.0\Core.pdb
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\Core.dll
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\refint\Core.dll
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\Core.pdb
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\Core.genruntimeconfig.cache
+E:\Projects\Web\Khorasani\Core\obj\Debug\net8.0\ref\Core.dll

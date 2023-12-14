@@ -1,0 +1,15 @@
+E:\Projects\Web\Khorasani\Services\bin\Debug\net8.0\Services.deps.json
+E:\Projects\Web\Khorasani\Services\bin\Debug\net8.0\Services.dll
+E:\Projects\Web\Khorasani\Services\bin\Debug\net8.0\Services.pdb
+E:\Projects\Web\Khorasani\Services\bin\Debug\net8.0\Core.dll
+E:\Projects\Web\Khorasani\Services\bin\Debug\net8.0\Core.pdb
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\Services.csproj.CopyComplete
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\Services.dll
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\refint\Services.dll
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\Services.pdb
+E:\Projects\Web\Khorasani\Services\obj\Debug\net8.0\ref\Services.dll

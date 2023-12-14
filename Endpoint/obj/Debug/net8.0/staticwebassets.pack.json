@@ -1,0 +1,541 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Endpoint.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Endpoint.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\Main.css",
+      "PackagePath": "staticwebassets\\Css\\Main.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\Menu-demo4.css",
+      "PackagePath": "staticwebassets\\Css\\Menu-demo4.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\Menu.css",
+      "PackagePath": "staticwebassets\\Css\\Menu.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\Style.css",
+      "PackagePath": "staticwebassets\\Css\\Style.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\admin.css",
+      "PackagePath": "staticwebassets\\Css\\admin.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\hoverimg.css",
+      "PackagePath": "staticwebassets\\Css\\hoverimg.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\Css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\owl.theme.min.css",
+      "PackagePath": "staticwebassets\\Css\\owl.theme.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Fonts\\IRANSansWeb(FaNum).ttf",
+      "PackagePath": "staticwebassets\\Fonts\\IRANSansWeb(FaNum).ttf"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Fonts\\IRANSansWeb(FaNum)_Bold.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\IRANSansWeb(FaNum)_Bold.ttf"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Fonts\\IRANSansWeb(FaNum)_Medium.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\IRANSansWeb(FaNum)_Medium.ttf"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\Fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Fonts\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\Fonts\\fa-light-300.woff2"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\1.jpg",
+      "PackagePath": "staticwebassets\\Img\\1.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\13.jpg",
+      "PackagePath": "staticwebassets\\Img\\13.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\14.jpg",
+      "PackagePath": "staticwebassets\\Img\\14.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\16.jpg",
+      "PackagePath": "staticwebassets\\Img\\16.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\2.jpg",
+      "PackagePath": "staticwebassets\\Img\\2.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\4.jpg",
+      "PackagePath": "staticwebassets\\Img\\4.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\452.png",
+      "PackagePath": "staticwebassets\\Img\\452.png"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\456.png",
+      "PackagePath": "staticwebassets\\Img\\456.png"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\Ads.gif",
+      "PackagePath": "staticwebassets\\Img\\Ads.gif"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\Divar4.jpg",
+      "PackagePath": "staticwebassets\\Img\\Divar4.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\Engineers.jpg",
+      "PackagePath": "staticwebassets\\Img\\Engineers.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\Logo.png",
+      "PackagePath": "staticwebassets\\Img\\Logo.png"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\Lotus-M-G-4.jpg",
+      "PackagePath": "staticwebassets\\Img\\Lotus-M-G-4.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\Lotus-M-G-5.jpg",
+      "PackagePath": "staticwebassets\\Img\\Lotus-M-G-5.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\Lotus-M-G-6.jpg",
+      "PackagePath": "staticwebassets\\Img\\Lotus-M-G-6.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\Lotus-M-G-7.jpg",
+      "PackagePath": "staticwebassets\\Img\\Lotus-M-G-7.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\aboutus.jpg",
+      "PackagePath": "staticwebassets\\Img\\aboutus.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\ahanalatiran.gif",
+      "PackagePath": "staticwebassets\\Img\\ahanalatiran.gif"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\asansor-gif5.gif",
+      "PackagePath": "staticwebassets\\Img\\asansor-gif5.gif"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\avatar.jpg",
+      "PackagePath": "staticwebassets\\Img\\avatar.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\grid-img.jpg",
+      "PackagePath": "staticwebassets\\Img\\grid-img.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\grid-img3.jpg",
+      "PackagePath": "staticwebassets\\Img\\grid-img3.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\grid-img4.jpg",
+      "PackagePath": "staticwebassets\\Img\\grid-img4.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\grid-img5.jpg",
+      "PackagePath": "staticwebassets\\Img\\grid-img5.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\icons\\certificate-benefit-icon.svg",
+      "PackagePath": "staticwebassets\\Img\\icons\\certificate-benefit-icon.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\icons\\credit-benefit-icon.svg",
+      "PackagePath": "staticwebassets\\Img\\icons\\credit-benefit-icon.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\icons\\guarantee-benefit-icon.svg",
+      "PackagePath": "staticwebassets\\Img\\icons\\guarantee-benefit-icon.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\icons\\icon10.png",
+      "PackagePath": "staticwebassets\\Img\\icons\\icon10.png"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\icons\\icon8.png",
+      "PackagePath": "staticwebassets\\Img\\icons\\icon8.png"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\icons\\icon9.png",
+      "PackagePath": "staticwebassets\\Img\\icons\\icon9.png"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\icons\\quality-benefit-icon.svg",
+      "PackagePath": "staticwebassets\\Img\\icons\\quality-benefit-icon.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\icons\\support-benefit-icon.svg",
+      "PackagePath": "staticwebassets\\Img\\icons\\support-benefit-icon.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\icons\\train-benefit-icon.svg",
+      "PackagePath": "staticwebassets\\Img\\icons\\train-benefit-icon.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\index6.png",
+      "PackagePath": "staticwebassets\\Img\\index6.png"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\jav.jpg",
+      "PackagePath": "staticwebassets\\Img\\jav.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\jav2.jpg",
+      "PackagePath": "staticwebassets\\Img\\jav2.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\logomiddle.png",
+      "PackagePath": "staticwebassets\\Img\\logomiddle.png"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\news-img1 (1).jpg",
+      "PackagePath": "staticwebassets\\Img\\news-img1 (1).jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\news-img1.jpg",
+      "PackagePath": "staticwebassets\\Img\\news-img1.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\news-img4 (1).jpg",
+      "PackagePath": "staticwebassets\\Img\\news-img4 (1).jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\news-img4.jpg",
+      "PackagePath": "staticwebassets\\Img\\news-img4.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\news-img5 (1).jpg",
+      "PackagePath": "staticwebassets\\Img\\news-img5 (1).jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\news-img5.jpg",
+      "PackagePath": "staticwebassets\\Img\\news-img5.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\other-pic.jpg",
+      "PackagePath": "staticwebassets\\Img\\other-pic.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\other-pic3.jpg",
+      "PackagePath": "staticwebassets\\Img\\other-pic3.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\other-pic4.jpg",
+      "PackagePath": "staticwebassets\\Img\\other-pic4.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\packageBg.jpg",
+      "PackagePath": "staticwebassets\\Img\\packageBg.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\service.jpg",
+      "PackagePath": "staticwebassets\\Img\\service.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\service.png",
+      "PackagePath": "staticwebassets\\Img\\service.png"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\slide1.jpg",
+      "PackagePath": "staticwebassets\\Img\\slide1.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\slide8.jpg",
+      "PackagePath": "staticwebassets\\Img\\slide8.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Img\\slide9.jpg",
+      "PackagePath": "staticwebassets\\Img\\slide9.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Js\\Custom.js",
+      "PackagePath": "staticwebassets\\Js\\Custom.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Js\\Menu.js",
+      "PackagePath": "staticwebassets\\Js\\Menu.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Js\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Js\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\Js\\owl.carousel.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\3a2cc695e67148c1b95d4cecbaafe219.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\3a2cc695e67148c1b95d4cecbaafe219.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\8a23d8f85c1f421091a65a6526fc4da7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\8a23d8f85c1f421091a65a6526fc4da7.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Endpoint.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Endpoint.props",
+      "PackagePath": "build\\Endpoint.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Endpoint.props",
+      "PackagePath": "buildMultiTargeting\\Endpoint.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Endpoint.props",
+      "PackagePath": "buildTransitive\\Endpoint.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Core.Models
+{
+    public class ProductAttribute
+    {
+        public int Id { get; set; }
+        public string AttributeName { get; set; }
+        public string AttributeValue { get; set; }
+        public int ProductId { get; set; }
+        [ForeignKey("ProductId")]
+        public Product Product { get; set; }
+
+    }
+}

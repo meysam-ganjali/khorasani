@@ -1,0 +1,81 @@
+@using Core.Models
+@using services.tools.Image
+@model List<Product>
+<div class="row justify-content-start">
+    <div class="alert alert-primary" role="alert">
+        <h3 class="text-center">مدیرت محصولات</h3>
+    </div>
+</div>
+<div class="row justify-content-start">
+    <div class="row justify-content-start">
+        <div class="alert alert-secondary" role="alert">
+            <a asp-controller="Product" asp-action="CreateProduct" class="btn btn-success">ایجاد محصول جدید</a>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-start">
+    <table class="table table-bordered table-striped table-hover">
+        <tr>
+            <td>#</td>
+            <td></td>
+            <td>عنوان</td>
+            <td>دسته</td>
+            <td></td>
+        </tr>
+        @if (Model.Any())
+        {
+            foreach (var p in Model)
+            {
+                <tr>
+                    <td>#@p.Id</td>
+                    <td>
+                        <img src="@(PathExtention.ProductCoverOrigin + p.CoverPath)" width="100" height="70" alt="">
+                    </td>
+                    <td>@p.Name</td>
+                    <td>@p.Category.ParentCategory.Name - @p.Category.Name</td>
+                    <td>
+                        <div>
+                            <button class="btn btn-success btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="25px" height="25px"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                                افزودن گالری
+                            </button>
+                            <a class="btn btn-danger btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6" width="25px" height="25px">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                </svg>
+                                حذف
+                            </a>
+                            <a class="btn btn-info btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6" width="25px" height="25px">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+
+                                جزئیات
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">
+                    <div class="alert alert-info" role="alert">
+                        <p>محصولی یافت نشد</p>
+                    </div>
+                </td>
+            </tr>
+        }
+
+
+    </table>
+</div>

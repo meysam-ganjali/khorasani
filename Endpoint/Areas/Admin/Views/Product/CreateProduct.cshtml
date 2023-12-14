@@ -1,0 +1,123 @@
+
+<div class="row justify-content-start">
+    <div class="alert alert-primary" role="alert">
+        <h3 class="text-center">محصول جدید</h3>
+    </div>
+</div>
+<form id="formCreateProduct" asp-controller="Product" asp-action="CreateProduct" method="post" enctype="multipart/form-data">
+    <div class="row justify-content-start">
+
+        <div class="col-md-6">
+            <div class=mb-3>
+                <label for="name" class="form-label">نام محصول</label>
+                <input type="text" id="name" name="Name" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="model" class="form-label">مدل محصول</label>
+                <input type="text" id="model" name="Model" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="model" class="form-label">مدل محصول</label>
+                <select name="CategoryId" class="form-select" asp-items="ViewBag.category"></select>
+            </div>
+            <div class="mb-3 text_box">
+                <label for="model" class="form-label">توضیحات مختصر</label>
+                <textarea class="form-label" name="ShortDescription" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div class="mb-3 text_box text_box3">
+                <label for="model" class="form-label">توضیحات کامل</label>
+                <textarea class="form-label" name="LongDescription" id="" cols="30" rows="10"></textarea>
+            </div>
+            <section class="row mb-3">
+                <div class=" mb-3 col-6">
+                    <label for="" class="form-label">عنوان ویژگی</label>
+                    <input type="text"  class="form-control" id="txt_attr_name">
+                </div>
+                <div class=" col-6">
+                     <label for="model" class="form-label">مقدار ویژگی</label>
+                    <input type="text" class="form-control" id="txt_attr_val">
+                </div>
+                <button id="btn_add_attr" type="button" class="btn btn-outline-primary btn-sm ">افزودن ویژگی</button>
+            </section>
+        </div>
+        <div class="col-md-6 mb-3">
+            <section class="parent_preaviewImage">
+                <img class="priventImage">
+                <img class="priventDefult"
+                    src="data:image/png;base64,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">
+                <input type="file" name="CoverPath" class="create_image">
+            </section>
+        </div>
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>نام</th>
+                    <th>مقدار</th>
+                    <th></th>
+                </tr>
+
+            </thead>
+            <tbody id="tbl_attr">
+
+            </tbody>
+
+        </table>
+        <button class="btn btn-success">ثبت محصول</button>
+    </div>
+</form>
+
+
+
+@section Scripts {
+    <script>
+        let txt_attr_name = document.getElementById("txt_attr_name");
+        let txt_attr_val = document.getElementById("txt_attr_val");
+        let i = 0;
+        let formCreateProduct = document.getElementById("formCreateProduct");
+        let tbl_attr = document.getElementById("tbl_attr");
+        formCreateProduct.addEventListener("submit", (event) => {
+            event.preventDefault();
+            let valid = document.querySelectorAll(".valid");
+            let valid_value = document.querySelectorAll(".valid_value");
+            if (valid.length > 0 && valid_value.length > 0)
+                formCreateProduct.submit();
+        })
+
+
+        document.querySelector("#btn_add_attr").onclick = () => {
+            if (txt_attr_name.value === "")
+                alert("عنوان ویژگی را وارد نکردید");
+            else
+                if (txt_attr_val.value === "")
+                    alert("مقدار ویژگی را وارد نکردید");
+                else {
+                    formCreateProduct.appendChild(document.createRange().createContextualFragment(`
+                    <input name="CreateAttribute[${i}].AttributeName" value="${txt_attr_name.value}" type="hidden" id="txt_attr_name${i}" class="d-none valid"/>
+                    <input name="CreateAttribute[${i}].AttributeValue" value="${txt_attr_val.value}" id="txt_attr_val${i}" type="hidden" class="d-none valid_value"/>`))
+                    tbl_attr.innerHTML += `<tr id="tr${i}"> <td> ${txt_attr_name.value} </td> <td> ${txt_attr_val.value} </td> <td> <button type="button" class="btn btn-danger btn-sm" onclick='deleteAttr("#txt_attr_name${i}","#txt_attr_val${i}","#tr${i}")'> حذف </button> </td> </tr>`;
+                    txt_attr_name.value = "";
+                    txt_attr_val.value = "";
+                    i++;
+                }
+        }
+
+        const deleteAttr = (name, val, tr) => {
+            document.querySelector(name).remove();
+            document.querySelector(val).remove();
+            document.querySelector(tr).remove();
+        }
+
+        let priventImage = document.querySelector(".priventImage");
+        document.querySelector(".create_image").onchange = evt => {
+            const [file] = evt.target.files
+            if (file) {
+                priventImage.src = URL.createObjectURL(file)
+                priventImage.classList.add("activeImage");
+            }
+            else {
+                priventImage.classList.remove("activeImage");
+                priventImage.src = "";
+            }
+        }
+    </script>
+}

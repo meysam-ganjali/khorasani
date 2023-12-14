@@ -1,0 +1,55 @@
+@using Core.Models
+@model List<Role>
+<div class="row justify-content-start">
+    <div class="alert alert-primary" role="alert">
+        <h3 class="text-center">مدیرت نقشها</h3>
+    </div>
+</div>
+
+<div class="row justify-content-start">
+    <div class="row justify-content-start">
+        <div class="alert alert-secondary" role="alert">
+            <a class="btn btn-success">ایجاد نقش جدید</a>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-start">
+    <table class="table table-bordered table-striped table-hover">
+        <tr>
+            <td>#</td>
+            <td>نام نقش</td>
+            <td>امکانات</td>
+        </tr>
+        @if (Model.Count() > 0)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.RoleName</td>
+                    <td>
+                        <div>
+                            <button class="btn btn-success btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="25px" height="25px" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                                افزودن نقش
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">
+                    <div class="alert alert-info" role="alert">
+                        <p>نقشی یافت نشد</p>
+                    </div>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
