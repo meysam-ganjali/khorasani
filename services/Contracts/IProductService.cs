@@ -13,7 +13,7 @@ namespace services.Contracts
         BaseResult deleteProduct(int id);
         BaseResult deleteGalleryImage(int galleryId);
 
-        BaseResult editProduct(int id, CreateProduct product);
+        BaseResult<Product> getProductDetailes(int id);
 
         BaseResult<List<Product>> getAll(string? searchKey);
         BaseResult<List<ProductGallery>> getAllGallery(int productId);

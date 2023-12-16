@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxHZXRQcm9kdWN0QXR0cmlidXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Projects/Web/Khorasani/Endpoint/Areas/Admin/Views/Product/GetProductDetailes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxHZXRQcm9kdWN0RGV0YWlsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Projects/Web/Khorasani/Endpoint/Areas/Admin/Views/Product/GetProductGallery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxHZXRQcm9kdWN0R2FsbGVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

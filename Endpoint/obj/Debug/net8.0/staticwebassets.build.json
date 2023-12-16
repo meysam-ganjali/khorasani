@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dWi5BFjHw7laJC9cK2+vKdyNcjlfnCxzA57Jvpoechk=",
+  "Hash": "YHax8SFpAhT6el/bH2K2UPUqmXyZQclgPN7Qnyl0Ayw=",
   "Source": "Endpoint",
   "BasePath": "_content/Endpoint",
   "Mode": "Default",
@@ -112,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\products\\cover\\8a23d8f85c1f421091a65a6526fc4da7.jpg"
     },
     {
-      "Identity": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\303016ace4754fe5ad76721d6a03cd6c.jpg",
+      "Identity": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\1988ecbff71944428eda181aab12bb17.jpg",
       "SourceId": "Endpoint",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\",
       "BasePath": "_content/Endpoint",
-      "RelativePath": "assets/img/products/gallery/303016ace4754fe5ad76721d6a03cd6c.jpg",
+      "RelativePath": "assets/img/products/gallery/1988ecbff71944428eda181aab12bb17.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,15 +128,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\gallery\\303016ace4754fe5ad76721d6a03cd6c.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\gallery\\1988ecbff71944428eda181aab12bb17.jpg"
     },
     {
-      "Identity": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\fd3fadbf1db6414e8348392a8e4871c5.jpg",
+      "Identity": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\26f8a05c915e484fb0d99abe4ecea561.jpg",
       "SourceId": "Endpoint",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\",
       "BasePath": "_content/Endpoint",
-      "RelativePath": "assets/img/products/gallery/fd3fadbf1db6414e8348392a8e4871c5.jpg",
+      "RelativePath": "assets/img/products/gallery/26f8a05c915e484fb0d99abe4ecea561.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,7 +147,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\gallery\\fd3fadbf1db6414e8348392a8e4871c5.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\gallery\\26f8a05c915e484fb0d99abe4ecea561.jpg"
+    },
+    {
+      "Identity": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\3a7dbb15829a44d4b50ae22ea700554e.jpg",
+      "SourceId": "Endpoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\",
+      "BasePath": "_content/Endpoint",
+      "RelativePath": "assets/img/products/gallery/3a7dbb15829a44d4b50ae22ea700554e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\gallery\\3a7dbb15829a44d4b50ae22ea700554e.jpg"
     },
     {
       "Identity": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\admin.css",

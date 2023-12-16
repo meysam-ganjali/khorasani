@@ -20,16 +20,18 @@ namespace services.Impeliment
 
         public BaseResult createAttribute(CreateAttribute attr, int pId)
         {
-            ProductAttribute ProductAttr = new ProductAttribute{
-                AttributeName=attr.AttributeName,
-                AttributeValue=attr.AttributeValue,
-                ProductId=pId
+            ProductAttribute ProductAttr = new ProductAttribute
+            {
+                AttributeName = attr.AttributeName,
+                AttributeValue = attr.AttributeValue,
+                ProductId = pId
             };
             _context.ProductAttributes.Add(ProductAttr);
             _context.SaveChanges();
-            return new BaseResult{
-                IsSuccess=true,
-                Message="مشخصه اضافه گردید."
+            return new BaseResult
+            {
+                IsSuccess = true,
+                Message = "مشخصه اضافه گردید."
             };
         }
 
@@ -107,19 +109,22 @@ namespace services.Impeliment
 
         public BaseResult deleteAttribute(int attrId)
         {
-            var attr = _context.ProductAttributes.FirstOrDefault(x=>x.Id == attrId);
-            if(attr == null){
-                return  new BaseResult{
-                    IsSuccess=false,
-                    Message="مشخصه یافت نشد."
+            var attr = _context.ProductAttributes.FirstOrDefault(x => x.Id == attrId);
+            if (attr == null)
+            {
+                return new BaseResult
+                {
+                    IsSuccess = false,
+                    Message = "مشخصه یافت نشد."
                 };
             }
             _context.ProductAttributes.Remove(attr);
             _context.SaveChanges();
- return  new BaseResult{
-                    IsSuccess=true,
-                    Message="مشخصه حذف شد."
-                };
+            return new BaseResult
+            {
+                IsSuccess = true,
+                Message = "مشخصه حذف شد."
+            };
         }
 
         public BaseResult deleteGalleryImage(int galleryId)
@@ -149,13 +154,46 @@ namespace services.Impeliment
 
         public BaseResult deleteProduct(int id)
         {
-            throw new NotImplementedException();
+            var product = _context.Products
+            .Include(x => x.ProductGalleries)
+            .Include(x => x.ProductAttributes)
+            .FirstOrDefault(x => x.Id == id);
+            if (product == null)
+            {
+                return new BaseResult
+                {
+                    IsSuccess = false,
+                    Message = "محصول یافت نشد."
+                };
+            }
+            if (product.ProductGalleries.Any())
+            {
+                foreach (var p in product.ProductGalleries)
+                {
+                    _context.ProductGalleries.Remove(p);
+                    if (!string.IsNullOrWhiteSpace(p.ImagePath))
+                    {
+                        if (File.Exists(PathExtention.ProductGalleryOriginServer + p.ImagePath))
+                            File.Delete(PathExtention.ProductGalleryOriginServer + p.ImagePath);
+                    }
+                }
+            }
+            if (product.ProductAttributes.Any())
+            {
+                foreach (var item in product.ProductAttributes)
+                {
+                    _context.ProductAttributes.Remove(item);
+                }
+            }
+            _context.Products.Remove(product);
+            _context.SaveChanges();
+            return new BaseResult
+            {
+                IsSuccess = true,
+                Message = "محصول و متعلقات آن حذف گردید."
+            };
         }
 
-        public BaseResult editProduct(int id, CreateProduct product)
-        {
-            throw new NotImplementedException();
-        }
 
         public BaseResult<List<Product>> getAll(string? searchKey)
         {
@@ -207,6 +245,30 @@ namespace services.Impeliment
                 Data = res,
                 IsSuccess = true
             };
+        }
+
+        public BaseResult<Product> getProductDetailes(int id)
+        {
+            var product = _context.Products
+            .Include(x => x.ProductGalleries)
+            .Include(x => x.ProductAttributes)
+            .Include(x=>x.Category)
+            .ThenInclude(x=>x.ParentCategory)
+            .FirstOrDefault(x => x.Id == id);
+            if (product == null)
+            {
+                return new BaseResult<Product>
+                {
+                    IsSuccess = false,
+                    Message = "محصول یافت نشد."
+                };
+            }
+            return new BaseResult<Product>
+            {
+                Data = product,
+                IsSuccess = true
+            };
+
         }
     }
 }

@@ -1,0 +1,65 @@
+@using Core.Models
+@using services.tools.Image
+@model Product?
+<div class="row justify-content-start">
+    <div class="alert alert-primary" role="alert">
+        <h3 class="text-center">جزئیات محصولات</h3>
+    </div>
+</div>
+<div class="row justify-content-start">
+    <table class="table table-bordered table-striped table-hover">
+        @if (Model != null)
+        {
+            <tr>
+                <td>@Model.Id</td>
+                <td><img src="@(PathExtention.ProductCoverOrigin + Model.CoverPath)" width="100" height="70" alt=""></td>
+                <td>@Model.Name</td>
+                <td>@Model.Category.ParentCategory.Name - @Model.Category.Name</td>
+                <td>@Html.Raw(Model.ShortDescription)</td>
+                <td>@Html.Raw(Model.LongDescription)</td>
+            </tr>
+            @if (Model.ProductGalleries.Any())
+            {
+                <tr>
+                    <td colspan="@Model.ProductGalleries.Count()">گالری محصول</td>
+                </tr>
+                <tr>
+                    @foreach (var i in Model.ProductGalleries)
+                    {
+                        <td><img src="@(PathExtention.ProductGalleryOrigin + i.ImagePath)" width="50" height="50" alt=""></td>
+                    }
+
+                </tr>
+            }
+            @if (Model.ProductAttributes.Any())
+            {
+                <tr>
+                    <td colspan="@Model.ProductAttributes.Count()">مشخصات محصول</td>
+                </tr>
+                <tr>
+                    <td >عنوان</td>
+                    <td >مقدار</td>
+                </tr>
+                @foreach (var i in Model.ProductAttributes)
+                {
+                    <tr>
+                        <td>@i.AttributeName</td>
+                        <td>@i.AttributeValue</td>
+                    </tr>
+                }
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">
+                    <div class="alert alert-info" role="alert">
+                        <p>محصولی یافت نشد</p>
+                    </div>
+                </td>
+            </tr>
+        }
+
+
+    </table>
+</div>
