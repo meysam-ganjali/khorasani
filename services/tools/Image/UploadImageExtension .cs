@@ -4,7 +4,7 @@ namespace services.tools.Image
 {
    public static class UploadImageExtension {
     public static bool AddImageToServer(this IFormFile image, string fileName, string orginalPath, int? width, int? height, string thumbPath = null, string deletefileName = null) {
-        if (image != null && image.IsImage()) {
+        if (image != null ) {
             if (!Directory.Exists(orginalPath))
                 Directory.CreateDirectory(orginalPath);
             if (!string.IsNullOrEmpty(deletefileName)) {

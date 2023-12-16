@@ -129,9 +129,7 @@ E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\staticwebassets\msbuild.buil
 E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Endpoint.props
 E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Endpoint.props
 E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\staticwebassets.pack.json
-E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\scopedcss\bundle\Endpoint.styles.css
-E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\scopedcss\projectbundle\Endpoint.bundle.scp.css
 E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\Endpoint.csproj.CopyComplete
 E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\Endpoint.dll
 E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\refint\Endpoint.dll

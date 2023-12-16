@@ -1,7 +1,6 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
     <meta charset="UTF-8">
@@ -15,7 +14,8 @@
     <link href="~/Css/owl.theme.min.css" rel="stylesheet" />
     <link href="~/Css/hoverimg.css" rel="stylesheet" />
 </head>
-<body  oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
     <div class="main_wrap">
         <div class="of-site-mask"></div>
 
@@ -28,72 +28,22 @@
             <div class="off-canvas-inner">
                 <div id="of-mobile-nav" class="mobile-menu-wrap">
                     <ul class="mobile-menu">
+                        @await Component.InvokeAsync("Category")
 
                         <li>
-                            <a href="#">دموهای اصلی<i class="explain-menu fal fa-angle-left"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="Index_demo1.html">دموی اصلی 1</a></li>
-                                <li><a href="Index_demo2.html">دموی اصلی 2</a></li>
-                                <li><a href="Index_demo3.html">دموی اصلی 3</a></li>
-                                <li><a href="Index_demo4.html">دموی اصلی 4</a></li>
-                            </ul>
+                            <a href="#">درباره ما<i class="explain-menu"></i></a>
                         </li>
                         <li>
-                            <a href="#">درباره ما<i class="explain-menu fal fa-angle-left"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="Aboutus1.html">درباره ما 1</a></li>
-                                <li><a href="Aboutus2.html">درباره ما 2</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">ارتباط با ما<i class="explain-menu fal fa-angle-left"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="Contactus1.html">ارتباط ما 1</a></li>
-                                <li><a href="Contactus2.html">ارتباط ما 2</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">پرسش و پاسخ<i class="explain-menu fal fa-angle-left"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="Faq1.html">پرسش و پاسخ 1</a></li>
-                                <li><a href="Faq2.html">پرسش و پاسخ 2</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">تیم ما<i class="explain-menu fal fa-angle-left"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="Ourteam.html">اعضای تیم</a></li>
-                                <li><a href="Ourteam_details.html">جزئیات تیم</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">خدمات ما<i class="explain-menu fal fa-angle-left"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="Service1.html">خدمات ما 1 </a></li>
-                                <li><a href="Service2.html">خدمات ما 2</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">وبلاگ<i class="explain-menu fal fa-angle-left"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="blog_grid.html">وبلاگ جدولی </a></li>
-                                <li><a href="blog_list.html">وبلاگ لیستی</a></li>
-                                <li><a href="blog_destails.html">جزئیات وبلاگ</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">پروژه ها<i class="explain-menu fal fa-angle-left"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="Portfoilo1.html">نمونه پروژه 1 </a></li>
-                                <li><a href="Portfoilo2.html">نمونه پروژه 2 </a></li>
-                                <li><a href="Portfoilo3.html">نمونه پروژه 3 </a></li>
-                                <li><a href="Portfoilo_details.html">جزئیات پروژه</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="404.html">صفحه 404</a></li>
-                        <li><a href="Login.html">صفحه ورود عضویت</a></li>
-                        <li><a href="Blank_page.html">صفحه خالی</a></li>
+                            <a href="#">ارتباط با ما<i class="explain-menu"></i></a>
 
+                        </li>
+                        <li>
+                            <a href="#">خدمات ما<i class="explain-menu "></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#">پروژه ها<i class="explain-menu "></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -111,109 +61,9 @@
                                         <img src="~/Img/Logo.png" />
                                     </a>
                                 </li>
-
-                                <li class="has_sub ">
-                                    <a href="#" class="currentlnklight">صفحه اصلی</a>
-                                    <div class="second">
-                                        <div class="inner">
-                                            <ul>
-                                                <li><a href="Index_demo1.html">صفحه اصلی دمو 1</a></li>
-                                                <li><a href="Index_demo2.html">صفحه اصلی دمو 2</a></li>
-                                                <li><a href="Index_demo3.html">صفحه اصلی دمو 3</a></li>
-                                                <li><a href="Index_demo4.html">صفحه اصلی دمو 4</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="has_sub narrow">
-                                    <a href="#">صفحات</a>
-
-                                    <div class="second">
-                                        <div class="inner">
-                                            <ul>
-                                                <li class="sub">
-                                                    <a href="#" class=""><i class="q_menu_arrow fal fa-angle-left"></i>درباره ما</a>
-                                                    <ul>
-                                                        <li><a href="Aboutus1.html">درباره ما 1</a></li>
-                                                        <li><a href="Aboutus2.html">درباره ما 2</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="sub">
-                                                    <a href="#" class=""><i class="q_menu_arrow fal fa-angle-left"></i>ارتباط با ما</a>
-                                                    <ul>
-                                                        <li><a href="Contactus1.html">ارتباط با ما 1</a></li>
-                                                        <li><a href="Contactus2.html" >ارتباط با ما 2</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="sub">
-                                                    <a href="#" class=""><i class="q_menu_arrow fal fa-angle-left"></i>پرسش و پاسخ </a>
-                                                    <ul>
-                                                        <li><a href="Faq1.html">پرسش و پاسخ 1</a></li>
-                                                        <li><a href="Faq2.html">پرسش و پاسخ 2</a></li>
-                                                    </ul>
-                                                </li>
-
-                                                <li class="sub">
-                                                    <a href="#" class=""><i class="q_menu_arrow fal fa-angle-left"></i>تیم ما</a>
-                                                    <ul>
-                                                        <li><a href="Ourteam.html">اعضای تیم</a></li>
-                                                        <li><a href="Ourteam_details.html">جزئیات تیم ما</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="sub">
-                                                    <a href="#" class=""><i class="q_menu_arrow fal fa-angle-left"></i>خدمات ما</a>
-                                                    <ul>
-                                                        <li><a href="Service1.html">خدمات ما 1</a></li>
-                                                        <li><a href="Service2.html">خدمات ما 2</a></li>
-                                                    </ul>
-                                                </li>
-
-                                                <li><a href="404.html">صفحه 404</a></li>
-                                                <li><a href="Login.html">صفحه ورود عضویت</a></li>
-                                                <li><a href="Blank_page.html">صفحه خالی</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-
-
-
-                                <li class="has_sub ">
-                                    <a href="#">وبلاگ</a>
-                                    <div class="second">
-                                        <div class="inner">
-                                            <ul>
-                                                <li>
-                                                    <a href="blog_list.html" >وبلاگ لیستی</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog_grid.html">وبلاگ جدولی</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="blog_destails.html">جزئیات وبلاگ</a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-
+                                @await Component.InvokeAsync("DesktopCat")
                                 <li class="has_sub narrow">
                                     <a href="#">پروژه ها</a>
-
-                                    <div class="second">
-                                        <div class="inner">
-                                            <ul>
-
-                                                <li><a href="Portfoilo1.html">نمونه پروژه 1</a></li>
-                                                <li><a href="Portfoilo2.html">نمونه پروژه 2</a></li>
-                                                <li><a href="Portfoilo3.html">نمونه پروژه 3</a></li>
-                                                <li><a href="Portfoilo_details.html">جزئیات پروژه</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </li>
 
                                 <li><a href="Service2.html">خدمات ما</a></li>
@@ -229,7 +79,8 @@
                         </div>
                         <form class="search_wrap mt-lg-0" id="ajax-form-search" method="get" action="">
 
-                            <input type="text" id="search-form-text" class="search-field" value="" name="s" placeholder="کلید واژه مورد نظر ...">
+                            <input type="text" id="search-form-text" class="search-field" value="" name="s"
+                                placeholder="کلید واژه مورد نظر ...">
                             <button><i class="fal fa-search"></i></button>
 
                             <input type="hidden" name="post_type" value="product">
@@ -249,7 +100,8 @@
                         <div class="pr-xl-4 mb-2 text-right address">
                             <img src="~/Img/Logo.png" class="img-fluid mb-4" />
 
-                            <p class="mb-3"><i class="fal fa-map-marker-alt ml-2"></i> استان - شهرستان - خیابان بهارستان - مجتمع صوفیا </p>
+                            <p class="mb-3"><i class="fal fa-map-marker-alt ml-2"></i> استان - شهرستان - خیابان بهارستان
+                                - مجتمع صوفیا </p>
                             <p class="mb-3"><i class="fal fa-mobile ml-2"></i>شماره همراه : 09125468547</p>
                             <p class="mb-3"><i class="fal fa-phone ml-2"></i>شماره تماس : 0179874563</p>
                             <p class="mb-3"><i class="fal fa-envelope ml-2"></i>Info@test.com</p>
@@ -269,10 +121,10 @@
                                 <a href="Index_demo3.html"><i class="fal fa-angle-left ml-2"></i>دموی شماره 3</a>
                             </li>
                             <li>
-                                <a href="Index_demo4.html" ><i class="fal fa-angle-left ml-2"></i>دموی شماره 4</a>
+                                <a href="Index_demo4.html"><i class="fal fa-angle-left ml-2"></i>دموی شماره 4</a>
                             </li>
                             <li>
-                                <a href="Demo.html" ><i class="fal fa-angle-left ml-2"></i>دموی کل صفحات</a>
+                                <a href="Demo.html"><i class="fal fa-angle-left ml-2"></i>دموی کل صفحات</a>
                             </li>
                         </ul>
                     </div>
@@ -284,10 +136,10 @@
                             </li>
 
                             <li>
-                                <a href="Service1.html" ><i class="fal fa-angle-left ml-2"></i>خدمات ما</a>
+                                <a href="Service1.html"><i class="fal fa-angle-left ml-2"></i>خدمات ما</a>
                             </li>
                             <li>
-                                <a href="Portfoilo1.html" ><i class="fal fa-angle-left ml-2"></i>پروژه ها</a>
+                                <a href="Portfoilo1.html"><i class="fal fa-angle-left ml-2"></i>پروژه ها</a>
                             </li>
 
                             <li>
@@ -302,7 +154,8 @@
 
                     <div class="col-xl-4 col-md-6 mb-3">
                         <h3>عضویت در خبرنامه</h3>
-                        <p> ثبت نام کنید و آخرین نکات را از طریق ایمیل دریافت کنید ، جهت ثبت نام فقط کافی ست که آدرس ایمیل را در کادر زیر وارد نمایید</p>
+                        <p> ثبت نام کنید و آخرین نکات را از طریق ایمیل دریافت کنید ، جهت ثبت نام فقط کافی ست که آدرس
+                            ایمیل را در کادر زیر وارد نمایید</p>
                         <form class="newsletter p_relative mt-3">
                             <input type="text" placeholder="آدرس ایمیل">
                             <button class="submit_btn" type="submit"><i class="fab fa-telegram-plane"></i></button>
@@ -331,7 +184,9 @@
 
                 <div class="row pt-3">
                     <div class="container-fluid">
-                        <div class="copyright">© کلیه حقوق این قالب برای طراح محفوظ می باشد -<a href="https://www.rtl-theme.com/author/shamim831/products/" class="mr-2">خرید از راست چین</a></div>
+                        <div class="copyright">© کلیه حقوق این قالب برای طراح محفوظ می باشد -<a
+                                href="https://www.rtl-theme.com/author/shamim831/products/" class="mr-2">خرید از راست
+                                چین</a></div>
                     </div>
                 </div>
             </div>
@@ -345,4 +200,5 @@
     <script src="~/Js/Custom.js"></script>
     <script src="~/Js/Menu.js"></script>
 </body>
+
 </html>

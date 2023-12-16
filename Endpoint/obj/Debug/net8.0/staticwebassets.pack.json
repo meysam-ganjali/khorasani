@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Endpoint.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Endpoint.bundle.scp.css"
-    },
-    {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\Css\\Main.css",
       "PackagePath": "staticwebassets\\Css\\Main.css"
     },
@@ -285,6 +281,22 @@
       "PackagePath": "staticwebassets\\Js\\owl.carousel.js"
     },
     {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\Competitivedvantages\\6a2719ff5da94f198e3a01330c2e9018.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\Competitivedvantages\\6a2719ff5da94f198e3a01330c2e9018.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\Competitivedvantages\\a714634f544f46aaa50ff29c92af9b4b.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\Competitivedvantages\\a714634f544f46aaa50ff29c92af9b4b.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\Competitivedvantages\\ba5cbd63fc404648965cf1163eba3d16.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\Competitivedvantages\\ba5cbd63fc404648965cf1163eba3d16.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\Competitivedvantages\\d78cf31123434259b4e9ecab0fc440d1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\Competitivedvantages\\d78cf31123434259b4e9ecab0fc440d1.svg"
+    },
+    {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\212c4b2e6441459ebf4715ddd9da8c88.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\212c4b2e6441459ebf4715ddd9da8c88.jpg"
     },
@@ -307,6 +319,14 @@
     {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\3a7dbb15829a44d4b50ae22ea700554e.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\gallery\\3a7dbb15829a44d4b50ae22ea700554e.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\sliders\\ee366e67e4fc4dffb30c9b5e6fb505be.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sliders\\ee366e67e4fc4dffb30c9b5e6fb505be.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\sliders\\f06942c21f7049f69d6d9c88e132174e.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sliders\\f06942c21f7049f69d6d9c88e132174e.jpg"
     },
     {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\lib\\bootstrap\\LICENSE",

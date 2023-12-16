@@ -1,0 +1,22 @@
+@using Core.Models
+@model List<ParentCategory>
+
+@if (Model.Any())
+{
+    foreach (var p in Model)
+    {
+        <li>
+            <a href="#">@p.Name<i class="explain-menu fal fa-angle-left"></i></a>
+            @if (p.Categories.Any())
+            {
+                <ul class="sub-menu">
+                    @foreach (var c in p.Categories)
+                    {
+                        <li><a href="Index_demo1.html">@c.Name</a></li>
+                    }
+                </ul>
+            }
+
+        </li>
+    }
+}

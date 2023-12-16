@@ -13,7 +13,8 @@ public static class CheckContentImage {
                     postedFile.ContentType.ToLower() != "image/jpeg" &&
                     postedFile.ContentType.ToLower() != "image/pjpeg" &&
                     postedFile.ContentType.ToLower() != "image/x-png" &&
-                    postedFile.ContentType.ToLower() != "image/png") {
+                    postedFile.ContentType.ToLower() != "image/png" &&
+                    postedFile.ContentType.ToLower() != "image/svg") {
             return false;
         }
 
@@ -22,7 +23,8 @@ public static class CheckContentImage {
         //-------------------------------------------
         if (Path.GetExtension(postedFile.FileName).ToLower() != ".jpg"
             && Path.GetExtension(postedFile.FileName).ToLower() != ".png"
-            && Path.GetExtension(postedFile.FileName).ToLower() != ".jpeg") {
+            && Path.GetExtension(postedFile.FileName).ToLower() != ".jpeg"
+             && Path.GetExtension(postedFile.FileName).ToLower() != ".svg") {
             return false;
         }
 

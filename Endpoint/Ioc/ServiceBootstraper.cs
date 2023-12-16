@@ -15,6 +15,8 @@ namespace Endpoint.Ioc
             services.AddScoped<IUserService,UserService>();
             services.AddScoped<ICategoryService,CategoryServie>();
             services.AddScoped<IProductService,ProductService>();
+            services.AddScoped<ISliderService,SliderService>();
+            services.AddScoped<ICompetitivedvantagesService,CompetitivedvantagesService>();
             return services;
          }
     }

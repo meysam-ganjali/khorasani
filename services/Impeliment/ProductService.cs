@@ -186,6 +186,11 @@ namespace services.Impeliment
                 }
             }
             _context.Products.Remove(product);
+            if (!string.IsNullOrWhiteSpace(product.CoverPath))
+            {
+                if (File.Exists(PathExtention.ProductCoverOriginServer + product.CoverPath))
+                    File.Delete(PathExtention.ProductCoverOriginServer + product.CoverPath);
+            }
             _context.SaveChanges();
             return new BaseResult
             {
@@ -252,8 +257,8 @@ namespace services.Impeliment
             var product = _context.Products
             .Include(x => x.ProductGalleries)
             .Include(x => x.ProductAttributes)
-            .Include(x=>x.Category)
-            .ThenInclude(x=>x.ParentCategory)
+            .Include(x => x.Category)
+            .ThenInclude(x => x.ParentCategory)
             .FirstOrDefault(x => x.Id == id);
             if (product == null)
             {

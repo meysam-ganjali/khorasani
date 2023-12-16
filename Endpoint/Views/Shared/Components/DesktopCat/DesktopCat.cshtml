@@ -1,0 +1,33 @@
+@using Core.Models
+@model List<ParentCategory>
+
+@if (Model.Any())
+{
+    foreach (var p in Model)
+    {
+
+        <li class="has_sub ">
+            <a href="#" class="currentlnklight">@p.Name</a>
+
+            @if (p.Categories.Any())
+            {
+
+                <div class="second">
+                    <div class="inner">
+                        <ul>
+                            @foreach (var c in p.Categories)
+                            {
+ <li><a href="Index_demo1.html">@c.Name</a></li>
+                            }
+                           
+                            @* <li><a href="Index_demo2.html">صفحه اصلی دمو 2</a></li>
+                            <li><a href="Index_demo3.html">صفحه اصلی دمو 3</a></li>
+                            <li><a href="Index_demo4.html">صفحه اصلی دمو 4</a></li> *@
+                        </ul>
+                    </div>
+                </div>
+            }
+
+        </li>
+    }
+}

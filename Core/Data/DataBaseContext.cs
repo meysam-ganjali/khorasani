@@ -19,7 +19,9 @@ namespace Core.Data
         public DbSet<ProductAttribute> ProductAttributes { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<ParentCategory> ParentCategories { get; set; }
-        public DbSet<Setting> Set { get; set; }
+        public DbSet<Setting> Setting { get; set; }
+        public DbSet<Slider> Slider { get; set; }
+        public DbSet<CompetitiveAdvantage> CompetitiveAdvantages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

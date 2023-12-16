@@ -71,6 +71,27 @@ namespace Core.Migrations
                     b.ToTable("Companies");
                 });
 
+            modelBuilder.Entity("Core.Models.CompetitiveAdvantage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("LogoPath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CompetitiveAdvantages");
+                });
+
             modelBuilder.Entity("Core.Models.ParentCategory", b =>
                 {
                     b.Property<int>("Id")
@@ -219,7 +240,24 @@ namespace Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Set");
+                    b.ToTable("Setting");
+                });
+
+            modelBuilder.Entity("Core.Models.Slider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Slider");
                 });
 
             modelBuilder.Entity("Core.Models.User", b =>
