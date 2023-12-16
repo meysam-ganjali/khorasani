@@ -35,7 +35,7 @@
                     <td>@p.Category.ParentCategory.Name - @p.Category.Name</td>
                     <td>
                         <div>
-                            <button class="btn btn-success btn-sm">
+                            <button onclick="getProductId('@p.Id')" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#add_gallery">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="25px" height="25px"
                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -79,3 +79,39 @@
 
     </table>
 </div>
+
+<div class="modal fade" id="add_gallery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">افزودن گالری</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-controller="Product" asp-action="CreateGallery" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="productId" value="" id="p_id">
+                    <div  mb-3">
+                        <input type="file" class="form-control" name="images"  multiple>
+                        <label for="floatingInput">عکسهای محصول</label>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        function getProductId(x){
+            var productId = document.getElementById("p_id");
+            productId.value=x;
+        }
+    </script>
+}

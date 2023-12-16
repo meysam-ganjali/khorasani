@@ -140,3 +140,4 @@ E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\Endpoint.genruntimeconfig.ca
 E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\ref\Endpoint.dll
 E:\Projects\Web\Khorasani\Endpoint\bin\Debug\net8.0\LazZiya.ImageResize.dll
 E:\Projects\Web\Khorasani\Endpoint\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+E:\Projects\Web\Khorasani\Endpoint\obj\Debug\net8.0\Endpoint.sourcelink.json

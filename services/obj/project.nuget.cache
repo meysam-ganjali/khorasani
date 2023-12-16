@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lkDfmFF09OJhr7+l2wfS1JV8OWEaetBMxYYWlezU5tT/0AyOsjXvCIZqvJ27oSW/K2MVB3tOywLRItRMR93UEQ==",
+  "dgSpecHash": "vdqatV/+j0FPH3klrHzhERWGaMq3PWe0/0Kl8HlRaoEOftxqRwxVFn6g99DVvFU2vd3fONlLpR1nlAmk0dvfpA==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\Web\\Khorasani\\services\\services.csproj",
+  "projectFilePath": "E:\\Projects\\Web\\Khorasani\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Meysam\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Meysam\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Web\\Khorasani\\services\\services.csproj": {}
+    "E:\\Projects\\Web\\Khorasani\\Services\\Services.csproj": {}
   },
   "projects": {
     "E:\\Projects\\Web\\Khorasani\\Core\\Core.csproj": {
@@ -77,14 +77,14 @@
         }
       }
     },
-    "E:\\Projects\\Web\\Khorasani\\services\\services.csproj": {
+    "E:\\Projects\\Web\\Khorasani\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Web\\Khorasani\\services\\services.csproj",
-        "projectName": "services",
-        "projectPath": "E:\\Projects\\Web\\Khorasani\\services\\services.csproj",
+        "projectUniqueName": "E:\\Projects\\Web\\Khorasani\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "E:\\Projects\\Web\\Khorasani\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Meysam\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Web\\Khorasani\\services\\obj\\",
+        "outputPath": "E:\\Projects\\Web\\Khorasani\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Meysam\\AppData\\Roaming\\NuGet\\NuGet.Config"

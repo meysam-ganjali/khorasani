@@ -904,7 +904,7 @@
           "SixLabors.ImageSharp": "3.0.1"
         },
         "runtime": {
-          "Services.dll": {}
+          "services.dll": {}
         }
       }
     }

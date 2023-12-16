@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PlWejguFA4xmP/kEzzyBnEbQ8l/xyHvIg7BIflLPj8Y=",
+  "Hash": "TzPkgJuy0eLSzCpG+3i4sADMeeDfmNYLBzk0IKeVP1g=",
   "Source": "Endpoint",
   "BasePath": "_content/Endpoint",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\Projects\\Web\\Khorasani\\Endpoint\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Endpoint.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\212c4b2e6441459ebf4715ddd9da8c88.jpg",
+      "SourceId": "Endpoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\",
+      "BasePath": "_content/Endpoint",
+      "RelativePath": "assets/img/products/cover/212c4b2e6441459ebf4715ddd9da8c88.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\cover\\212c4b2e6441459ebf4715ddd9da8c88.jpg"
     },
     {
       "Identity": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\3a2cc695e67148c1b95d4cecbaafe219.jpg",

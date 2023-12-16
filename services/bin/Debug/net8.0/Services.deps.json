@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Services/1.0.0": {
+      "services/1.0.0": {
         "dependencies": {
           "Core": "1.0.0",
           "LazZiya.ImageResize": "4.1.4",
@@ -17,7 +17,7 @@
           "SixLabors.ImageSharp": "3.0.1"
         },
         "runtime": {
-          "Services.dll": {}
+          "services.dll": {}
         }
       },
       "Azure.Core/1.25.0": {
@@ -640,7 +640,7 @@
     }
   },
   "libraries": {
-    "Services/1.0.0": {
+    "services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

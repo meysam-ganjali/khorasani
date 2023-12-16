@@ -35,7 +35,10 @@ namespace services.Impeliment
             }
             _context.ProductGalleries.AddRange(productsGalleries);
             _context.SaveChanges();
-            return new BaseResult(){};
+            return new BaseResult(){
+                IsSuccess=true,
+                Message="گالری با موفقیت ثبت گردید."
+            };
         }
 
         public BaseResult createProduct(CreateProduct product,List<CreateAttribute> createAttributes)

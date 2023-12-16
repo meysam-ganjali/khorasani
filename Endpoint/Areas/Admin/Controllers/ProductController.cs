@@ -38,5 +38,11 @@ namespace Endpoint.Areas.Admin.Controllers
                 
             return View();
         }
+
+        [HttpPost]
+        public IActionResult CreateGallery(int productId, List<IFormFile> images){
+           var res = _productService.createGallery(productId,images);
+            return Redirect("/Admin/Product/Index");
+        }
     }
 }

@@ -285,6 +285,10 @@
       "PackagePath": "staticwebassets\\Js\\owl.carousel.js"
     },
     {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\212c4b2e6441459ebf4715ddd9da8c88.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\212c4b2e6441459ebf4715ddd9da8c88.jpg"
+    },
+    {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\3a2cc695e67148c1b95d4cecbaafe219.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\3a2cc695e67148c1b95d4cecbaafe219.jpg"
     },
