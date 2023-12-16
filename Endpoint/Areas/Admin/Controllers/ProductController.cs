@@ -44,5 +44,14 @@ namespace Endpoint.Areas.Admin.Controllers
            var res = _productService.createGallery(productId,images);
             return Redirect("/Admin/Product/Index");
         }
+        public IActionResult DeleteGallery(int id){
+            var res = _productService.deleteGalleryImage(id);
+            return Redirect("/Admin/Product/Index"); 
+        }
+
+        public IActionResult GetProductGallery(int id){
+            var res = _productService.getAllGallery(id);
+            return View(res.Data);
+        }
     }
 }

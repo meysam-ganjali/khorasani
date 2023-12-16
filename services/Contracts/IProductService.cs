@@ -16,6 +16,7 @@ namespace services.Contracts
         BaseResult editProduct(int id, CreateProduct product);
 
         BaseResult<List<Product>> getAll(string? searchKey);
+        BaseResult<List<ProductGallery>> getAllGallery(int productId);
 
     }
 }

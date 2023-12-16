@@ -14,5 +14,6 @@ namespace Core.Models
         [ForeignKey("CategoryId")] 
         public Category Category { get; set; }
         public ICollection<ProductAttribute> ProductAttributes { get; set; }
+        public ICollection<ProductGallery> ProductGalleries { get; set; }
     }
 }

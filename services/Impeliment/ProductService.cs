@@ -26,22 +26,24 @@ namespace services.Impeliment
                 {
                     var imageName = Guid.NewGuid().ToString("N") + Path.GetExtension(gallery.FileName);
                     gallery.AddImageToServer(imageName, PathExtention.ProductGalleryOriginServer, null, null, null, null);
-                    
-                    productsGalleries.Add(new ProductGallery{
-                        ImagePath=imageName,
-                        ProductId=id
+
+                    productsGalleries.Add(new ProductGallery
+                    {
+                        ImagePath = imageName,
+                        ProductId = id
                     });
                 }
             }
             _context.ProductGalleries.AddRange(productsGalleries);
             _context.SaveChanges();
-            return new BaseResult(){
-                IsSuccess=true,
-                Message="گالری با موفقیت ثبت گردید."
+            return new BaseResult()
+            {
+                IsSuccess = true,
+                Message = "گالری با موفقیت ثبت گردید."
             };
         }
 
-        public BaseResult createProduct(CreateProduct product,List<CreateAttribute> createAttributes)
+        public BaseResult createProduct(CreateProduct product, List<CreateAttribute> createAttributes)
         {
             var img = string.Empty;
             if (product.CoverPath.IsImage())
@@ -89,7 +91,27 @@ namespace services.Impeliment
 
         public BaseResult deleteGalleryImage(int galleryId)
         {
-            throw new NotImplementedException();
+            ProductGallery? gallery = _context.ProductGalleries.FirstOrDefault(x => x.Id == galleryId);
+            if (gallery == null)
+            {
+                return new BaseResult
+                {
+                    IsSuccess = false,
+                    Message = "تصویر یافت نشد"
+                };
+            }
+            _context.ProductGalleries.Remove(gallery);
+            if (!string.IsNullOrWhiteSpace(gallery.ImagePath))
+            {
+                if (File.Exists(PathExtention.ProductGalleryOriginServer + gallery.ImagePath))
+                    File.Delete(PathExtention.ProductGalleryOriginServer + gallery.ImagePath);
+            }
+            _context.SaveChanges();
+            return new BaseResult
+            {
+                IsSuccess = true,
+                Message = "تصویر از لیسست گالری محصول حذف گردید."
+            };
         }
 
         public BaseResult deleteProduct(int id)
@@ -104,10 +126,41 @@ namespace services.Impeliment
 
         public BaseResult<List<Product>> getAll(string? searchKey)
         {
-            return new BaseResult<List<Product>>{
-                Data=_context.Products
-                .Include(x=>x.Category)
-                .ThenInclude(x=>x.ParentCategory).ToList()
+            var products = _context.Products
+            .Include(x=>x.ProductGalleries)
+             .Include(x => x.Category)
+             .ThenInclude(x => x.ParentCategory)
+             .AsQueryable();
+            if (!string.IsNullOrWhiteSpace(searchKey))
+            {
+                products = products.Where(x => x.Name.Contains(searchKey));
+            }
+            return new BaseResult<List<Product>>
+            {
+                Data = products.ToList()
+               .ToList()
+            };
+        }
+
+        public BaseResult<List<ProductGallery>> getAllGallery(int productId)
+        {
+            var res = _context.ProductGalleries
+            .Include(x=>x.Product)
+            .Where(x => x.ProductId == productId);
+            if (res == null)
+            {
+                return new BaseResult<List<ProductGallery>>
+                {
+                    Data = null,
+                    IsSuccess = false,
+                    Message = "گالری برای محصول یافت نشد"
+                };
+            }
+            return new BaseResult<List<ProductGallery>>()
+            {
+                Data = res.ToList(),
+                IsSuccess = true,
+
             };
         }
     }
