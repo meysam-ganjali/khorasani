@@ -17,6 +17,10 @@ namespace services.Contracts
 
         BaseResult<List<Product>> getAll(string? searchKey);
         BaseResult<List<ProductGallery>> getAllGallery(int productId);
+        BaseResult<List<ProductAttribute>> getProductAttribute(int productId);
+
+        BaseResult createAttribute(CreateAttribute attr,int pId);
+        BaseResult deleteAttribute(int attrId);
 
     }
 }

@@ -1,0 +1,98 @@
+@using Core.Models
+@model List<ProductAttribute>
+<div class="row justify-content-start">
+    <div class="alert alert-primary" role="alert">
+        <h3 class="text-center">مدیرت مشخصه ها</h3>
+    </div>
+</div>
+<div class="row justify-content-start">
+    <div class="row justify-content-start">
+        <div class="alert alert-secondary" role="alert">
+            <a onclick="getProductId('@ViewBag.productId')" class="btn btn-success btn-sm" data-bs-toggle="modal"
+                data-bs-target="#add_attr" class="btn btn-success">مشخصه جدید</a>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-start">
+    <table class="table table-bordered table-striped table-hover">
+        <tr>
+            <td>#</td>
+            <td>عنوان</td>
+            <td>مقدار</td>
+            <td></td>
+        </tr>
+        @if (Model.Any())
+        {
+            foreach (var p in Model)
+            {
+                <tr>
+                    <td>#@p.Id</td>
+                    <td>@p.AttributeName</td>
+                    <td>@p.AttributeValue</td>
+                    <td>
+                        <div>
+                            <a href="/Admin/Product/DeleteProductAttribute?attrId=@p.Id&p_Id=@ViewBag.productId" class="btn btn-danger btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6" width="25px" height="25px">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                </svg>
+                                حذف
+                            </a>
+                           
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4">
+                    <div class="alert alert-info" role="alert">
+                        <p>مشخصه ای یافت نشد</p>
+                    </div>
+                </td>
+            </tr>
+        }
+
+
+    </table>
+</div>
+<div class="modal fade" id="add_attr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">افزودن گالری</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-controller="Product" asp-action="CreateProductAttribute" method="post" e>
+                    <input type="hidden" name="productId" value="" id="p_id">
+                    <div class="mb-3">
+                        <label for="floatingInput"> عنوان مشخصه</label>
+                        <input type="text" class="form-control" name="AttributeName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="floatingInput"> مقدار مشخصه</label>
+                        <input type="text" class="form-control" name="AttributeValue">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        function getProductId(x) {
+            var productId = document.getElementById("p_id");
+            productId.value = x;
+        }
+    </script>
+}

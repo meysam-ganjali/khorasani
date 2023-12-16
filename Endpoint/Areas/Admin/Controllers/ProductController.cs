@@ -53,5 +53,20 @@ namespace Endpoint.Areas.Admin.Controllers
             var res = _productService.getAllGallery(id);
             return View(res.Data);
         }
+
+        public IActionResult GetProductAttribute(int id){
+            ViewBag.productId= id;
+            var res = _productService.getProductAttribute(id);
+            return View(res.Data);
+        }
+        [HttpPost]
+        public IActionResult CreateProductAttribute(int productId, CreateAttribute attr){
+         var res = _productService.createAttribute(attr,productId);
+         return Redirect($"/Admin/Product/GetProductAttribute/{productId}");
+        }
+         public IActionResult DeleteProductAttribute(int attrId,int p_Id){
+            var res = _productService.deleteAttribute(attrId);
+            return Redirect($"/Admin/Product/GetProductAttribute/{p_Id}");
+        }
     }
 }

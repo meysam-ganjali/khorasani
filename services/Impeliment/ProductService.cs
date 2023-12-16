@@ -17,6 +17,22 @@ namespace services.Impeliment
             _context = context;
 
         }
+
+        public BaseResult createAttribute(CreateAttribute attr, int pId)
+        {
+            ProductAttribute ProductAttr = new ProductAttribute{
+                AttributeName=attr.AttributeName,
+                AttributeValue=attr.AttributeValue,
+                ProductId=pId
+            };
+            _context.ProductAttributes.Add(ProductAttr);
+            _context.SaveChanges();
+            return new BaseResult{
+                IsSuccess=true,
+                Message="مشخصه اضافه گردید."
+            };
+        }
+
         public BaseResult createGallery(int id, List<IFormFile> images)
         {
             List<ProductGallery> productsGalleries = new List<ProductGallery>();
@@ -89,6 +105,23 @@ namespace services.Impeliment
             };
         }
 
+        public BaseResult deleteAttribute(int attrId)
+        {
+            var attr = _context.ProductAttributes.FirstOrDefault(x=>x.Id == attrId);
+            if(attr == null){
+                return  new BaseResult{
+                    IsSuccess=false,
+                    Message="مشخصه یافت نشد."
+                };
+            }
+            _context.ProductAttributes.Remove(attr);
+            _context.SaveChanges();
+ return  new BaseResult{
+                    IsSuccess=true,
+                    Message="مشخصه حذف شد."
+                };
+        }
+
         public BaseResult deleteGalleryImage(int galleryId)
         {
             ProductGallery? gallery = _context.ProductGalleries.FirstOrDefault(x => x.Id == galleryId);
@@ -127,7 +160,8 @@ namespace services.Impeliment
         public BaseResult<List<Product>> getAll(string? searchKey)
         {
             var products = _context.Products
-            .Include(x=>x.ProductGalleries)
+            .Include(x => x.ProductGalleries)
+            .Include(x => x.ProductAttributes)
              .Include(x => x.Category)
              .ThenInclude(x => x.ParentCategory)
              .AsQueryable();
@@ -145,7 +179,7 @@ namespace services.Impeliment
         public BaseResult<List<ProductGallery>> getAllGallery(int productId)
         {
             var res = _context.ProductGalleries
-            .Include(x=>x.Product)
+            .Include(x => x.Product)
             .Where(x => x.ProductId == productId);
             if (res == null)
             {
@@ -161,6 +195,17 @@ namespace services.Impeliment
                 Data = res.ToList(),
                 IsSuccess = true,
 
+            };
+        }
+
+        public BaseResult<List<ProductAttribute>> getProductAttribute(int productId)
+        {
+            var res = _context.ProductAttributes.Include(x => x.Product)
+            .Where(x => x.ProductId == productId).ToList();
+            return new BaseResult<List<ProductAttribute>>
+            {
+                Data = res,
+                IsSuccess = true
             };
         }
     }
