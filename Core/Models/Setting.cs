@@ -12,5 +12,7 @@ namespace Core.Models
         public string? Phone2 { get; set; }
         public string Address { get; set; }
         public string? LogoPath { get; set; }
+        public string Slogan { get; set; }
+        public string Description { get; set; }
     }
 }
