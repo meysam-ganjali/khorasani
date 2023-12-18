@@ -1,11 +1,13 @@
 
 using Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using services.Contracts;
 
 namespace Endpoint.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(SD.AdminManager)]
     public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;

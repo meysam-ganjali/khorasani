@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using services.Contracts;
 using services.Vm;
@@ -6,6 +7,7 @@ using services.Vm;
 namespace Endpoint.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(SD.AdminManager)]
     public class CompetitiveAdvantageController : Controller
     {
         private readonly ICompetitivedvantagesService _competitiv;

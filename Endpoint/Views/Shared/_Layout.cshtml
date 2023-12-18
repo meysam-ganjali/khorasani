@@ -72,20 +72,21 @@
 
                             </ul>
                         </div>
-                        <div class="m_search align-self-center pt-md-1 pt-2"><i class="fal fa-search"></i></div>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            if (User.IsInRole(SD.AdminManager))
+                            {
+                                <div class="d-inline align-self-center pt-md-1 pt-2">
+                                    <a href="/Admin" class="text-light">مدیریت</a>
+                                </div>
+                                
+                            }
+                        }
                         <div class="is-show mobile-nav-button">
-                            <img src="~/Img/Logo.png" />
-                            <a id="of-trigger" class="icon-wrap pr-3 pt-2" href="#"> <i class="fal fa-bars"></i></a>
-                        </div>
-                        <form class="search_wrap mt-lg-0" id="ajax-form-search" method="get" action="">
-
-                            <input type="text" id="search-form-text" class="search-field" value="" name="s"
-                                placeholder="کلید واژه مورد نظر ...">
-                            <button><i class="fal fa-search"></i></button>
-
-                            <input type="hidden" name="post_type" value="product">
-                            <div id="ajax-search-result"></div>
-                        </form>
+                                    <img src="~/Img/Logo.png" />
+                                    <a id="of-trigger" class="icon-wrap pr-3 pt-2" href="#"> <i class="fal fa-bars"></i></a>
+                                </div>
                     </div>
                 </div>
             </div>

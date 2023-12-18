@@ -16,6 +16,7 @@ namespace Endpoint.Ioc
             services.AddScoped<ICompetitivedvantagesService,CompetitivedvantagesService>();
             services.AddScoped<ISettingService,SettingService>();
             services.AddScoped<ICompletedProject,CompletedProject>();
+            services.AddScoped<IAuthService,AuthService>();
             return services;
          }
     }

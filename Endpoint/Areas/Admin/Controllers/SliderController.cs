@@ -1,10 +1,12 @@
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using services.Contracts;
 
 namespace Endpoint.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(SD.AdminManager)]
     public class SliderController : Controller
     {
        private readonly ISliderService _sliderService;

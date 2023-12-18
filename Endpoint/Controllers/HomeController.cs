@@ -1,8 +1,7 @@
-using System.Diagnostics;
+
 using Microsoft.AspNetCore.Mvc;
 using Endpoint.Models;
 using services.Contracts;
-using Core.Models;
 
 namespace Endpoint.Controllers;
 
@@ -32,8 +31,8 @@ public class HomeController : Controller
         return View(model);
     }
 
-    public IActionResult ProjectDetaile(int id){
-        var res = _project.getProject(id);
+    public IActionResult ProdutDetaile(int id){
+        var res = _product.getProductDetailes(id);
         return View(res.Data);
     }
 

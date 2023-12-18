@@ -58,7 +58,7 @@ else
 @if(Model.Products.Where(x=>x.ProductType==ProductType.HOT).Any()){
     foreach(var p in Model.Products.Where(x=>x.ProductType==ProductType.HOT)){
         <div class="m-2 blog_style ">
-            <a href="Portfoilo_details.html">
+            <a href="/Home/ProdutDetaile/@p.Id">
                 <img class="card-img-top" src="@(PathExtention.ProductCoverOrigin + p.CoverPath)" alt="Card image"></a>
             <div class="card-body">
                 <h3 class="mb-2"><a href="Portfoilo_details.html">@p.Name</a></h3>
@@ -90,7 +90,7 @@ else
 @if(Model.Products.Where(x=>x.ProductType==ProductType.COOLD).Any()){
     foreach(var p in Model.Products.Where(x=>x.ProductType==ProductType.COOLD)){
         <div class="m-2 blog_style ">
-            <a href="Portfoilo_details.html">
+            <a href="/Home/ProdutDetaile/@p.Id">
                 <img class="card-img-top" src="@(PathExtention.ProductCoverOrigin + p.CoverPath)" alt="Card image"></a>
             <div class="card-body">
                 <h3 class="mb-2"><a href="Portfoilo_details.html">@p.Name</a></h3>
@@ -122,7 +122,7 @@ else
 @if(Model.Products.Where(x=>x.ProductType==ProductType.FAN).Any()){
     foreach(var p in Model.Products.Where(x=>x.ProductType==ProductType.FAN)){
         <div class="m-2 blog_style ">
-            <a href="Portfoilo_details.html">
+            <a href="/Home/ProdutDetaile/@p.Id">
                 <img class="card-img-top" src="@(PathExtention.ProductCoverOrigin + p.CoverPath)" alt="Card image"></a>
             <div class="card-body">
                 <h3 class="mb-2"><a href="Portfoilo_details.html">@p.Name</a></h3>

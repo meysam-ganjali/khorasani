@@ -1,5 +1,6 @@
 
 using Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using services.Contracts;
@@ -8,6 +9,7 @@ using services.Vm;
 namespace Endpoint.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(SD.AdminManager)]
     public class ProductController : Controller
     {
         private readonly IProductService _productService;

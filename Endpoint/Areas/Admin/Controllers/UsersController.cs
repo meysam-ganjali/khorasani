@@ -1,17 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+
 using Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
 using services.Contracts;
 
 namespace Endpoint.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(SD.AdminManager)]
     public class UsersController : Controller
     {
         private readonly IUserService _userService;

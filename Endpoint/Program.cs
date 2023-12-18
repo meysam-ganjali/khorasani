@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataBaseContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnect")));
 builder.Services.registerService();
+builder.Services.AuthConfigure();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,6 +26,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
