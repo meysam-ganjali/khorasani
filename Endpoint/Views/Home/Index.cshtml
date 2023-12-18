@@ -51,18 +51,18 @@ else
         <div class="Dottedstocol ml-3"></div>
         <div class="singletitle">
             <a href="#"><span>مشاهده بیشتر</span></a>
-            <h1 class="testt text-right">محصولات ما</h1>
+            <h1 class="testt text-right">محصولات گرمایشی</h1>
         </div>
     </div>
     <div id="" class="owl-carousel owl-theme owl-decoproject text-right " style="z-index:0!important">
-@if(Model.Products.Any()){
-    foreach(var p in Model.Products){
+@if(Model.Products.Where(x=>x.ProductType==ProductType.HOT).Any()){
+    foreach(var p in Model.Products.Where(x=>x.ProductType==ProductType.HOT)){
         <div class="m-2 blog_style ">
             <a href="Portfoilo_details.html">
                 <img class="card-img-top" src="@(PathExtention.ProductCoverOrigin + p.CoverPath)" alt="Card image"></a>
             <div class="card-body">
                 <h3 class="mb-2"><a href="Portfoilo_details.html">@p.Name</a></h3>
-                <p>
+                <p style="height: 40px; overflow: hidden;">
                     @Html.Raw(p.ShortDescription)
                 </p>
                 <span><i class=" ml-2"></i>مدل :  @p.Model</span>
@@ -77,8 +77,72 @@ else
 
     </div>
 </section>
+<section class="container blog-grid p_relative">
 
-<section class="container mt-5">
+    <div class="d-flex flex-row mb-3">
+        <div class="Dottedstocol ml-3"></div>
+        <div class="singletitle">
+            <a href="#"><span>مشاهده بیشتر</span></a>
+            <h1 class="testt text-right">محصولات سرمایشی</h1>
+        </div>
+    </div>
+    <div id="" class="owl-carousel owl-theme owl-decoproject text-right " style="z-index:0!important">
+@if(Model.Products.Where(x=>x.ProductType==ProductType.COOLD).Any()){
+    foreach(var p in Model.Products.Where(x=>x.ProductType==ProductType.COOLD)){
+        <div class="m-2 blog_style ">
+            <a href="Portfoilo_details.html">
+                <img class="card-img-top" src="@(PathExtention.ProductCoverOrigin + p.CoverPath)" alt="Card image"></a>
+            <div class="card-body">
+                <h3 class="mb-2"><a href="Portfoilo_details.html">@p.Name</a></h3>
+                <p style="height: 40px; overflow: hidden;">
+                    @Html.Raw(p.ShortDescription)
+                </p>
+                <span><i class=" ml-2"></i>مدل :  @p.Model</span>
+                <div class="d-flex flex-row justify-content-between mt-2 pt-2 metraj">
+                    <span>@p.Category.ParentCategory.Name - @p.Category.Name </span>
+                </div>
+            </div>
+        </div>
+    }
+}
+       
+
+    </div>
+</section>
+<section class="container blog-grid p_relative">
+
+    <div class="d-flex flex-row mb-3">
+        <div class="Dottedstocol ml-3"></div>
+        <div class="singletitle">
+            <a href="#"><span>مشاهده بیشتر</span></a>
+            <h1 class="testt text-right">فن ها</h1>
+        </div>
+    </div>
+    <div id="" class="owl-carousel owl-theme owl-decoproject text-right " style="z-index:0!important">
+@if(Model.Products.Where(x=>x.ProductType==ProductType.FAN).Any()){
+    foreach(var p in Model.Products.Where(x=>x.ProductType==ProductType.FAN)){
+        <div class="m-2 blog_style ">
+            <a href="Portfoilo_details.html">
+                <img class="card-img-top" src="@(PathExtention.ProductCoverOrigin + p.CoverPath)" alt="Card image"></a>
+            <div class="card-body">
+                <h3 class="mb-2"><a href="Portfoilo_details.html">@p.Name</a></h3>
+                <p style="height: 40px; overflow: hidden;">
+                    @Html.Raw(p.ShortDescription)
+                </p>
+                <span><i class=" ml-2"></i>مدل :  @p.Model</span>
+                <div class="d-flex flex-row justify-content-between mt-2 pt-2 metraj">
+                    <span>@p.Category.ParentCategory.Name - @p.Category.Name </span>
+                </div>
+            </div>
+        </div>
+    }
+}
+       
+
+    </div>
+</section>
+@if(Model.Setting != null){
+    <section class="container mt-5">
 
     <section class="container bg-cudark text-white radius15 text-lg-right text-center my-5">
         <div class="row py-4 px-3 ">
@@ -87,171 +151,25 @@ else
                 <div class="border-top flex-grow-1 ms-2 border-gold"></div>
             </div>
             <div class="col-lg-10  order-lg-0 order-1">
-                <h3 class="IRANSans_Bold text-bro mb-2">" همواره همراه شما هستیم .. "</h3>
+                <h3 class="IRANSans_Bold text-bro mb-2">@Model.Setting.Slogan</h3>
                 <p class="mb-3">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
-                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                    از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                  @Model.Setting.Description
                 </p>
             </div>
             <div class="col-lg-2 text-lg-left order-lg-1 order-0">
-                <img src="~/Img/logomiddle.png" class="py-lg-0 p-3" />
+                <img src="@(PathExtention.SettingOrigin + Model.Setting.LogoPath)" class="py-lg-0 p-3" />
             </div>
         </div>
     </section>
 
 </section>
-
-<div class="container  mt-5">
-    <div class="d-flex flex-row mb-3">
-        <div class="Dottedstocol ml-3"></div>
-        <div class="singletitle">
-            <a href="#"><span>خدمات</span></a>
-            <h1 class="testt text-right">برخی از خدمات شرکت</h1>
-        </div>
-    </div>
-    <div class="row Service">
-        <div class="col-lg-3 col-md-6 d-lg-block d-none ">
-            <img src="~/Img/service.png" />
-        </div>
-        <div class="col-lg-3 col-md-6 ">
-            <div class="d-flex  flex-column sbox py-4 px-5 mb-4 radius15">
-                <div class="mb-3">
-                    <img src="~/Img/icons/icon10.png" />
-                </div>
-                <div class="line_bottom"></div>
-                <div>
-                    <h2 class="IRANSans_Medium">کد نویسی تمیز</h2>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است ..
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-lg-3 col-md-6 ">
-            <div class="d-flex flex-column sbox py-4 px-5 mb-4 radius15">
-                <div class="mb-3">
-                    <img src="~/Img/icons/icon9.png" />
-                </div>
-                <div class="line_bottom"></div>
-                <div>
-                    <h2 class="IRANSans_Medium">رنگ بندی جذاب</h2>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است ..
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-lg-3 col-md-12">
-            <div class="d-flex flex-column sbox py-4 px-5 mb-4 radius15">
-                <div class="mb-3">
-                    <img src="~/Img/icons/icon8.png" />
-                </div>
-                <div class="line_bottom"></div>
-                <div>
-                    <h2 class="IRANSans_Medium">طراحی واکنشگرا</h2>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است ..
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row  bg-warning  px-5 py-3 radius10">
-        <div class="col-lg-9 text-dark  text-lg-right text-center">
-            <h5 class="IRANSans_Medium">"ما تنها ساختمان های شما را نمیسازیم بلکه رویاهای شما را خواهیم ساخت .. "</h5>
-        </div>
-        <div class="col-lg-3 text-dark text-lg-left text-center mt-lg-0 mt-3">
-            <a class="btn btn-light radius20 text-dark IRANSans_Medium">تماس بگیرید : 09304567896</a>
-        </div>
-    </div>
-</div>
+}
 
 
-<section class="container blog-grid mt-5">
-
-    <div class="d-flex flex-row mb-3">
-        <div class="Dottedstocol ml-3"></div>
-        <div class="singletitle">
-            <a href="#"><span>مشاهده بیشتر</span></a>
-            <h1 class="testt text-right">پروژه های نمای ساختمانی</h1>
-        </div>
-    </div>
-    <div id="" class="owl-carousel owl-theme owl-outproject text-right ">
-        <div class="m-2 blog_style">
-            <a href="Portfoilo_details.html"><img class="card-img-top" src="~/Img/13.jpg" alt="Card image"></a>
-            <div class="card-body">
-                <h3 class="mb-2"><a href="Portfoilo_details.html">مدت زمان پروژه : 120 روز</a></h3>
-                <p class="mb-2">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                </p>
-                <div class="d-flex flex-row justify-content-between mt-2 pt-2 metraj">
-                    <span>نوع سنگ استفاده شد : مرمر</span>
-                </div>
-            </div>
-        </div>
-        <div class="m-2 blog_style">
-            <a href="Portfoilo_details.html"><img class="card-img-top" src="~/Img/2.jpg" alt="Card image"></a>
-            <div class="card-body">
-                <h3 class="mb-2"><a href="Portfoilo_details.html">مدت زمان پروژه : 90 روز</a></h3>
-                <p class="mb-2">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                </p>
-
-                <div class="d-flex flex-row justify-content-between mt-2 pt-2 metraj">
-                    <span>نوع سنگ استفاده شد : گرانیت</span>
-                </div>
-            </div>
-        </div>
-        <div class="m-2 blog_style">
-            <a href="Portfoilo_details.html"><img class="card-img-top" src="~/Img/14.jpg" alt="Card image"></a>
-            <div class="card-body">
-                <h3 class="mb-2"><a href="Portfoilo_details.html">مدت زمان پروژه : 60 روز</a></h3>
-                <p class="mb-2">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                </p>
-
-                <div class="d-flex flex-row justify-content-between mt-2 pt-2 metraj">
-                    <span>نوع سنگ استفاده شد : مرمر</span>
-                </div>
-            </div>
-        </div>
-        <div class="m-2 blog_style">
-            <a href="Portfoilo_details.html"><img class="card-img-top" src="~/Img/16.jpg" alt="Card image"></a>
-            <div class="card-body">
-                <h3 class="mb-2"><a href="Portfoilo_details.html">مدت زمان پروژه : 40 روز</a></h3>
-                <p class="mb-2">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                </p>
-
-                <div class="d-flex flex-row justify-content-between mt-2 pt-2 metraj">
-                    <span>نوع سنگ استفاده شد : گرانیت</span>
-                </div>
-            </div>
-        </div>
-        <div class="m-2 blog_style">
-            <a href="Portfoilo_details.html"><img class="card-img-top" src="~/Img/4.jpg" alt="Card image"></a>
-            <div class="card-body">
-                <h3 class="mb-2"><a href="Portfoilo_details.html">مدت زمان پروژه : 40 روز</a></h3>
-                <p class="mb-2">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                </p>
-
-                <div class="d-flex flex-row justify-content-between mt-2 pt-2 metraj">
-                    <span>نوع سنگ استفاده شد : گرانیت</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
 
 
+@if(Model.Companies.Any()){
 <section class="container spicblog mt-4">
-
     <div class="d-flex flex-row justify-content-between">
         <div class="d-flex flex-row mb-lg-2 mb-3">
             <div class="Dottedstocol ml-3"></div>
@@ -266,62 +184,25 @@ else
         </div>
     </div>
 
-    <div class="row mt-3">
-        <div class="col-lg-3 col-sm-6">
+    <div class="owl-carousel owl-theme owl-projects">
+        @foreach(var com in Model.Companies){
+            <div class="m-3">
             <div class="d-flex flex-lg-column flex-md-row flex-column mb-3">
-                <a href="blog_destails.html" class="piec4 grid mb-lg-3">
-                    <figure class="effect-sadie radius15">
-                        <img src="~/Img/grid-img5.jpg" alt="img01" class="radius15" />
+                <a href="/Home/ProjectDetaile/@com.Id" class="piec4 grid mb-lg-3">
+                     <figure class="effect-sadie radius15">
+                        <img src="@(PathExtention.ProjectOrigin + com.CompanyLogo)" alt="img01" class="radius15" style="min-height: 400px;" />
                         <figcaption>
-                            <h2 class="IRANSans_Bold">اصول طراحی مدرن</h2>
-                            <p>جهت مشاهده مطلب کلیک کنید ..</p>
+                            <h2 class="IRANSans_Bold">@com.Title</h2>
+                            <p>@com.CompanyName</p>
                         </figcaption>
-                    </figure>
+                    </figure> 
                 </a>
-
-            </div>
+            </div> 
         </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="d-flex flex-lg-column flex-md-row flex-column mb-3">
-                <a href="blog_destails.html" class="piec4 grid mb-lg-3">
-                    <figure class="effect-sadie  radius15">
-                        <img src="~/Img/grid-img3.jpg" alt="img01" />
-                        <figcaption>
-                            <h2 class="IRANSans_Bold">دکوراسیون داخلی</h2>
-                            <p>جهت مشاهده مطلب کلیک کنید ..</p>
-                        </figcaption>
-                    </figure>
-                </a>
-
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="d-flex flex-lg-column flex-md-row flex-column mb-3">
-                <a href="blog_destails.html" class="piec4 grid mb-lg-3">
-                    <figure class="effect-sadie  radius15">
-                        <img src="~/Img/grid-img.jpg" alt="img01" />
-                        <figcaption>
-                            <h2 class="IRANSans_Bold">بایدها ونبایدهای دیزاین</h2>
-                            <p>جهت مشاهده مطلب کلیک کنید ..</p>
-                        </figcaption>
-                    </figure>
-                </a>
-
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="d-flex flex-lg-column flex-md-row flex-column mb-3">
-                <a href="blog_destails.html" class="piec4 grid mb-lg-3">
-                    <figure class="effect-sadie radius15">
-                        <img src="~/Img/grid-img4.jpg" alt="img01" />
-                        <figcaption>
-                            <h2 class="IRANSans_Bold">هنر خلاقیت در طراحی</h2>
-                            <p>جهت مشاهده مطلب کلیک کنید ..</p>
-                        </figcaption>
-                    </figure>
-                </a>
-
-            </div>
-        </div>
+        }
+       
+       
     </div>
 </section>
+}
+

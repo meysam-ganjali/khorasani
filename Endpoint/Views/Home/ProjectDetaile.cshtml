@@ -1,0 +1,44 @@
+@using Core.Models
+@using services.tools.Image
+@model Company?
+<section class="banner_area">
+    <div class="container">
+        <h1 class="text-white IRANSans_Bold">مشخصات پروژه</h1>
+        <div class="breadcrumb_content">
+            <ul>
+                <li><a href="/">صفحه اصلی</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="container p-md-5 p-4 ">
+    <div class="row">
+        <div class="col-lg-4 mb-3 order-1 order-lg-0">
+            <div class="portfolio-info">
+                <div class="d-flex flex-row mb-lg-2 mb-3">
+                    <div class="Dottedstocol ml-3"></div>
+                    <div class="singletitle">
+                        <span>عنوان پروژه</span>
+                        <h1 class="text-right">@Model.Title<h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 mb-3 pr-3 order-0 order-lg-1">
+            <img src="@(PathExtention.ProjectOrigin + Model.CompanyLogo)" class="py-3 radius15 w-800">
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-lg-12">
+            <h3 class="IRANSans_Bold mb-2">توضیحات پروژه</h3>
+            <div class="line_bottom"></div>
+            <p class="text-justify">
+                @Model.Description
+            </p>
+            <p class="text-justify">
+                <h4> آدرس : @Model.CompanyAddress</h4>
+            </p>
+        </div>
+    </div>
+
+</section>

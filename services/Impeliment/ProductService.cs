@@ -82,6 +82,7 @@ namespace services.Impeliment
                 Model = product.Model,
                 Name = product.Name,
                 ShortDescription = product.ShortDescription,
+                ProductType=product.ProductType
             };
             _context.Products.Add(productInit);
             _context.SaveChanges();

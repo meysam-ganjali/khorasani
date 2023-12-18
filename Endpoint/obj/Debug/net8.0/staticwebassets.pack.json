@@ -301,12 +301,20 @@
       "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\212c4b2e6441459ebf4715ddd9da8c88.jpg"
     },
     {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\23d96f0ea0eb4b76a382d0e2294e139b.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\23d96f0ea0eb4b76a382d0e2294e139b.jpg"
+    },
+    {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\3a2cc695e67148c1b95d4cecbaafe219.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\3a2cc695e67148c1b95d4cecbaafe219.jpg"
     },
     {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\8a23d8f85c1f421091a65a6526fc4da7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\8a23d8f85c1f421091a65a6526fc4da7.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\cover\\d7cb44b80a1b495598bb86cf89e757ab.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\cover\\d7cb44b80a1b495598bb86cf89e757ab.jpg"
     },
     {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\1988ecbff71944428eda181aab12bb17.jpg",
@@ -317,8 +325,32 @@
       "PackagePath": "staticwebassets\\assets\\img\\products\\gallery\\26f8a05c915e484fb0d99abe4ecea561.jpg"
     },
     {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\2f0f614256874a4b88b4f714931cff9e.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\gallery\\2f0f614256874a4b88b4f714931cff9e.jpg"
+    },
+    {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\3a7dbb15829a44d4b50ae22ea700554e.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\gallery\\3a7dbb15829a44d4b50ae22ea700554e.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\47e2ea1b3ea64f9e95eca080ca6c94f7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\gallery\\47e2ea1b3ea64f9e95eca080ca6c94f7.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\77ce202091434d10a76ca649af88f53b.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\gallery\\77ce202091434d10a76ca649af88f53b.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\products\\gallery\\cc2cd17ed325440fb628033868b635fc.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\gallery\\cc2cd17ed325440fb628033868b635fc.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\projects\\731ce299f9db4028aa470793a139a63e.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\731ce299f9db4028aa470793a139a63e.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\settings\\89a2181ce20542b4a360ff4ff280ae86.png",
+      "PackagePath": "staticwebassets\\assets\\img\\settings\\89a2181ce20542b4a360ff4ff280ae86.png"
     },
     {
       "Id": "E:\\Projects\\Web\\Khorasani\\Endpoint\\wwwroot\\assets\\img\\sliders\\ee366e67e4fc4dffb30c9b5e6fb505be.jpg",

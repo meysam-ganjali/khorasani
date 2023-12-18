@@ -54,8 +54,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Projects/Web/Khorasani/Endpoint/Areas/Admin/Views/Project/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Projects/Web/Khorasani/Endpoint/Areas/Admin/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/Web/Khorasani/Endpoint/Areas/Admin/Views/Setting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2V0dGluZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Projects/Web/Khorasani/Endpoint/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
@@ -84,6 +92,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Projects/Web/Khorasani/Endpoint/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/Web/Khorasani/Endpoint/Views/Home/ProjectDetaile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9qZWN0RGV0YWlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Projects/Web/Khorasani/Endpoint/Views/Shared/Components/Category/Category.cshtml]

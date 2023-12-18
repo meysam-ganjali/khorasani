@@ -12,5 +12,6 @@ namespace services.Vm
         public string LongDescription { get; set; }
         public string Model { get; set; }
         public int CategoryId { get; set; }
+        public ProductType ProductType { get; set; }
     }
 }

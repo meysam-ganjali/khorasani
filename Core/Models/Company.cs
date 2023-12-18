@@ -12,5 +12,7 @@ namespace Core.Models
         public string CompanuPhone { get; set; }
         public string CompanyAddress { get; set; }
         public string? CompanyLogo { get; set; }
+        public string Description { get; set; }
+        public string Title { get; set; }
     }
 }

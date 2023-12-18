@@ -1,6 +1,44 @@
 
 // number count for stats, using jQuery animate
 
+
+
+function owlProjects() {
+    jQuery('.owl-projects').owlCarousel({
+        rtl: true,
+        loop: true,
+        nav: true,
+        autoplay: true,
+        smartSpeed: 2000,
+        autoplayTimeout: 4000,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            480: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+
+            1200: {
+                items: 4
+            },
+            1367: {
+                items: 3,
+            }
+        }
+    });
+}
+
+owlProjects();
+
+
+
+
+
 $('.counting').each(function () {
     var $this = $(this),
         countTo = $this.attr('data-count');
@@ -9,19 +47,19 @@ $('.counting').each(function () {
         countNum: countTo
     },
 
-    {
+        {
 
-        duration: 3000,
-        easing: 'linear',
-        step: function () {
-            $this.text(Math.floor(this.countNum));
-        },
-        complete: function () {
-            $this.text(this.countNum);
-            //alert('finished');
-        }
+            duration: 3000,
+            easing: 'linear',
+            step: function () {
+                $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+                $this.text(this.countNum);
+                //alert('finished');
+            }
 
-    });
+        });
 
 
 });
@@ -89,11 +127,11 @@ function owltoparticle() {
             },
 
             1200: {
-                items:4
+                items: 4
             }
-              , 1367: {
-                  items:4,
-              }
+            , 1367: {
+                items: 4,
+            }
         }
     });
 }
@@ -123,9 +161,9 @@ function owlproject() {
             1200: {
                 items: 3
             }
-              , 1367: {
-                  items:3,
-              }
+            , 1367: {
+                items: 3,
+            }
         }
     });
 }
@@ -155,9 +193,9 @@ function owlblog() {
             1200: {
                 items: 3
             }
-              , 1367: {
-                  items: 4,
-              }
+            , 1367: {
+                items: 4,
+            }
         }
     });
 }
@@ -179,7 +217,7 @@ function owlblogd3() {
                 items: 1,
             },
             480: {
-                items:2,
+                items: 2,
             },
             768: {
                 items: 3,
@@ -188,9 +226,9 @@ function owlblogd3() {
             1200: {
                 items: 4
             }
-              , 1367: {
-                  items: 5,
-              }
+            , 1367: {
+                items: 5,
+            }
         }
     });
 }
@@ -221,10 +259,10 @@ function owldecoproject() {
 
             1200: {
                 items: 4
+            },
+            1367: {
+                items: 5,
             }
-              , 1367: {
-                  items: 5,
-              }
         }
     });
 }
@@ -254,9 +292,9 @@ function owloutproject() {
             1200: {
                 items: 4
             }
-              , 1367: {
-                  items: 5,
-              }
+            , 1367: {
+                items: 5,
+            }
         }
     });
 }
@@ -275,7 +313,7 @@ function customers() {
                 items: 1,
             },
             480: {
-                items:3,
+                items: 3,
             },
             768: {
                 items: 4,
@@ -284,9 +322,9 @@ function customers() {
             1200: {
                 items: 6
             }
-              , 1367: {
-                  items:6,
-              }
+            , 1367: {
+                items: 6,
+            }
         }
     });
 }
@@ -314,9 +352,9 @@ function customershoz() {
             1200: {
                 items: 3
             }
-              , 1367: {
-                  items:3,
-              }
+            , 1367: {
+                items: 3,
+            }
         }
     });
 }
@@ -345,9 +383,9 @@ function customerscomnt() {
             1200: {
                 items: 4
             }
-              , 1367: {
-                  items: 4,
-              }
+            , 1367: {
+                items: 4,
+            }
         }
     });
 }
@@ -361,21 +399,21 @@ $(document).ready(function () {
     //owlevent1(),
     //owlevent4(),
     //owlevent5(),
- 
+
     //owlcustomer(),
     //owldemo5(),
     //owlcourse(),
     //teletype(),
     //prcingtable(),
     customers(),
-    customershoz(),
-    customerscomnt(),
-    owlblog(),
-    owlblogd3(),
-    owldecoproject(),
-    owloutproject(),
-    owlproject(),
-    owltoparticle();
+        customershoz(),
+        customerscomnt(),
+        owlblog(),
+        owlblogd3(),
+        owldecoproject(),
+        owloutproject(),
+        owlproject(),
+        owltoparticle();
 });
 
 
